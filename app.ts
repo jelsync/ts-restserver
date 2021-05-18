@@ -1,3 +1,8 @@
-export const nombre = 'jelsyn';
+import dotenv from 'dotenv';
+import Server from './models/server';
+//Configurar dotenv
+dotenv.config();
 
-console.log(nombre);
+const server = new Server();
+
+server.listen();
