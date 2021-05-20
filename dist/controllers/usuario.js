@@ -10,7 +10,8 @@ exports.getUsuarios = getUsuarios;
 const getUsuario = (req, res) => {
     const { id } = req.params;
     res.json({
-        mgs: 'Usuarios'
+        mgs: 'Usuarios',
+        id
     });
 };
 exports.getUsuario = getUsuario;
@@ -27,7 +28,8 @@ const putUsuario = (req, res) => {
     const { body } = req;
     res.json({
         mgs: 'putUsuario',
-        body
+        body,
+        id
     });
 };
 exports.putUsuario = putUsuario;
