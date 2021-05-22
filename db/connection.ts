@@ -1,8 +1,15 @@
 import { Sequelize } from 'sequelize';
+//mySql
+// const db = new Sequelize('node', 'root', '', {
+//     host: 'localhost',
+//     dialect: 'mysql',
+//     // logging: false
+// });
 
-const db = new Sequelize('node', 'root', '', {
+//POSTGRESQL
+const db = new Sequelize('Node', 'postgres', 'post', {
     host: 'localhost',
-    dialect: 'mysql',
+    dialect: 'postgres'
     // logging: false
 });
 
